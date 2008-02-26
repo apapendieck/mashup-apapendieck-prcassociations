@@ -20,208 +20,30 @@ Click a tab to view asset maps.
          
                 
                        
-<gm:section id="sectionChurches" title="Churches">
+<gm:section id="sectionCivicOrganization" title="CivicOrganizations">
 <div>
-    <h3>Churches</h3>
+    <h3>Civic Organizations</h3>
 </div>
 <table width="100%">
 <tr>
 <td style="padding-right:10px; width:250px" valign="top">
-<gm:list id="listChurches" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.4302015717457966721/ocx/public/basic/ocw/public/values?sq=civicorganization%3D1" pagesize="10" template="myListTemplate">
-<gm:handleEvent event="select" src="mapChurches"/>
+<gm:list id="listCivicOrganization" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.4302015717457966721/ocx/public/basic?sq=civicorganization%3D1" pagesize="10" template="myListTemplate">
+<gm:handleEvent event="select" src="mapCivicOrganization"/>
 </gm:list>
 </td>
 <td valign="top">
-<gm:map id="mapChurches" style="border:solid black 1px" control="large"
-maptypes="true" data="${listChurches}" latref="gsx:bglat" lngref="gsx:bglong"
+<gm:map id="mapCivicOrganization" style="border:solid black 1px" control="large"
+maptypes="true" data="${listCivicOrganization}" latref="gsx:bglat" lngref="gsx:bglong"
 infotemplate="myMapDetailsTemplate"
 lat="30.53" lng="-89.68" zoom="8">
-<gm:handleEvent event="select" src="listChurches"/>
-</gm:map>
-</td>
-</tr>
-</table>
-</gm:section> 
-       
-    <gm:section id="sectionSchools" title="Schools">
-<div>
-    <h3>Schools</h3>
-</div>
-<table width="100%">
-<tr>
-<td style="padding-right:10px; width:250px" valign="top">
-<gm:list id="listSchools" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq=school%3D1" pagesize="10" template="myListTemplate">
-<gm:handleEvent event="select" src="mapSchools"/>
-</gm:list>
-</td>
-<td valign="top">
-<gm:map id="mapSchools" style="border:solid black 1px" control="large"
-maptypes="true" data="${listSchools}" latref="gsx:bglat" lngref="gsx:bglong"
-infotemplate="myMapDetailsTemplate"
-lat="30.53" lng="-89.68" zoom="8">
-<gm:handleEvent event="select" src="listSchools"/>
+<gm:handleEvent event="select" src="listCivicOrganization"/>
 </gm:map>
 </td>
 </tr>
 </table>
 </gm:section> 
 
-
-
-
-<gm:section id="sectionFire" title="Fire">
-<div>
-<h3>Fire</h3>
-</div>
-<table width="100%">
-<tr>
-<td style="padding-right:10px; width:250px" valign="top">
-<gm:list id="listFire" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq=firedept%3D1"
-pagesize="10" template="myListTemplate">
-<gm:handleEvent event="select" src="mapFire"/>
-</gm:list>
-</td>
-<td valign="top">
-<gm:map id="mapFire" style="border:solid black 1px" control="large"
-maptypes="true" data="${listFire}" latref="gsx:bglat" lngref="gsx:bglong"
-infotemplate="myMapDetailsTemplate"
-lat="30.53" lng="-89.68" zoom="8">
-<gm:handleEvent event="select" src="listFire"/>
-</gm:map>
-</td>
-</tr>
-</table>
-</gm:section> 
-
-
-<gm:section id="sectionPost" title="Post">
-<div>
-<h3>Post</h3>
-</div>
-<table width="100%">
-<tr>
-<td style="padding-right:10px; width:250px" valign="top">
-<gm:list id="listPost" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq=postoffice%3D1"
-pagesize="10" template="myListTemplate">
-<gm:handleEvent event="select" src="mapPost"/>
-</gm:list>
-</td>
-<td valign="top">
-<gm:map id="mapPost" style="border:solid black 1px" control="large"
-maptypes="true" data="${listPost}"
-latref="gsx:bglat" lngref="gsx:bglong"
-infotemplate="myMapDetailsTemplate"
-lat="30.53" lng="-89.68" zoom="8">
-<gm:handleEvent event="select" src="listPost"/>
-</gm:map>
-</td>
-</tr>
-</table>
-</gm:section> <gm:section id="sectionLibraries"
-title="Libraries">
-<div>
-<h3>Libraries</h3>
-</div>
-<table width="100%">
-<tr>
-<td style="padding-right:10px; width:250px" valign="top">
-<gm:list id="listLibraries"
-data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq=library%3D1"
-pagesize="10" template="myListTemplate">
-<gm:handleEvent event="select" src="mapLibraries"/>
-</gm:list>
-</td>
-<td valign="top">
-<gm:map id="mapLibraries" style="border:solid black 1px"
-control="large"
-maptypes="true" data="${listLibraries}" latref="gsx:bglat"
-lngref="gsx:bglong"
-infotemplate="myMapDetailsTemplate"
-lat="30.53" lng="-89.68" zoom="8">
-<gm:handleEvent event="select" src="listLibraries"/>
-</gm:map>
-</td>
-</tr>
-</table>
-</gm:section> <gm:section id="sectionLawEnforcement"
-title="Law Enforcement">
-<div>
-<h3>Law Enforcement</h3>
-</div>
-<table width="100%">
-<tr>
-<td style="padding-right:10px; width:250px" valign="top">
-<gm:list id="listLawEnforcement"
-data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq=lawenforce%3D1"
-pagesize="10" template="myListTemplate">
-<gm:handleEvent event="select" src="mapLawEnforcement"/>
-</gm:list>
-</td>
-<td valign="top">
-<gm:map id="mapLawEnforcement" style="border:solid black 1px"
-control="large"
-maptypes="true" data="${listLawEnforcement}" latref="gsx:bglat"
-lngref="gsx:bglong"
-infotemplate="myMapDetailsTemplate"
-lat="30.53" lng="-89.68" zoom="8">
-<gm:handleEvent event="select" src="listLawEnforcement"/>
-</gm:map>
-</td>
-</tr>
-</table>
-</gm:section> <gm:section id="sectionHospitals"
-title="Hospitals">
-<div>
-<h3>Hospitals</h3>
-</div>
-<table width="100%">
-<tr>
-<td style="padding-right:10px; width:250px" valign="top">
-<gm:list id="listHospitals"
-data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq=hospital%3D1"
-pagesize="10" template="myListTemplate">
-<gm:handleEvent event="select" src="mapHospitals"/>
-</gm:list>
-</td>
-<td valign="top">
-<gm:map id="mapHospitals" style="border:solid black 1px"
-control="large"
-maptypes="true" data="${listHospitals}" latref="gsx:bglat"
-lngref="gsx:bglong"
-infotemplate="myMapDetailsTemplate"
-lat="30.53" lng="-89.68" zoom="8">
-<gm:handleEvent event="select" src="listHospitals"/>
-</gm:map>
-</td>
-</tr>
-</table>
-</gm:section> <gm:section id="sectionNursingHomes"
-title="Nursing Homes">
-<div>
-<h3>Nursing Homes</h3>
-</div>
-<table width="100%">
-<tr>
-<td style="padding-right:10px; width:250px" valign="top">
-<gm:list id="listNursingHomes"
-data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq=nursing%3D1"
-pagesize="10" template="myListTemplate">
-<gm:handleEvent event="select" src="mapNursingHomes"/>
-</gm:list>
-</td>
-<td valign="top">
-<gm:map id="mapNursingHomes" style="border:solid black 1px"
-control="large"
-maptypes="true" data="${listNursingHomes}" latref="gsx:bglat"
-lngref="gsx:bglong"
-infotemplate="myMapDetailsTemplate"
-lat="30.53" lng="-89.68" zoom="8">
-<gm:handleEvent event="select" src="listNursingHomes"/>
-</gm:map>
-</td>
-</tr>
-</table>
-</gm:section> <gm:section id="sectionDatabase"
+<gm:section id="sectionDatabase"
 title="Database">
 <div> <h3>Database</h3>
 </div>
