@@ -27,7 +27,7 @@ Click a tab to view asset maps.
 <table width="100%">
 <tr>
 <td style="padding-right:10px; width:250px" valign="top">
-<gm:list id="listCivicOrganization" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.4302015717457966721/ocx/public/basic?sq=civicorganization%3D1" pagesize="10" template="myListTemplate">
+<gm:list id="listCivicOrganization" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.4302015717457966721/ocx/public/values?sq=civicorganization%3D1" pagesize="10" template="myListTemplate">
 <gm:handleEvent event="select" src="mapCivicOrganization"/>
 </gm:list>
 </td>
