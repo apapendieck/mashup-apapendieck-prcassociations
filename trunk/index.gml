@@ -33,7 +33,7 @@ Click a tab to view asset maps.
 </td>
 <td valign="top">
 <gm:map id="mapCivicOrganization" style="border:solid black 1px" control="large"
-maptypes="true" data="${listCivicOrganization}" latref="gsx:bg_lat" lngref="gsx:bg_long"
+maptypes="true" data="${listCivicOrganization}" latref="gsx:bglat" lngref="gsx:bglong"
 infotemplate="myMapDetailsTemplate"
 lat="30.53" lng="-89.68" zoom="8">
 <gm:handleEvent event="select" src="listCivicOrganization"/>
