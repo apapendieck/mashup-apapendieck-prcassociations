@@ -1,4 +1,4 @@
-<gm:page title="Pearl River County Assets: Institutions" authenticate="false">
+<gm:page title="Pearl River County Assets: Associations" authenticate="false">
 
   <!--
     The mashup application demonstrates taking an external RSS feed from a google spreadsheet with
@@ -6,7 +6,7 @@
     @author: apapendieck@gmail.com
   -->
    <div>
-      <h3>Pearl River County Assets: Institutions</h3> 
+      <h3>Pearl River County Assets: Associations</h3> 
   </div>
   <gm:tabs target="myContainer"/>
   <gm:container id="myContainer" style="padding:3px;border:1px solid #369;width:900px;">
